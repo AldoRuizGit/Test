@@ -3,6 +3,11 @@ import java.util.Arrays;
 
 public class Test{
 
+
+
+public static final String ANSI_RED    = "\u001B[31m";
+public static final String ANSI_GREEN  = "\u001B[32m";
+public static final String ANSI_RESET  = "\u001B[0m";
 public static boolean test = true;
 
 public static ArrayList<String> testTicketName =
@@ -27,7 +32,13 @@ public static boolean testMetod  (){
 
 public static void main(String[] args) {
 
+  if(test){
+    System.out.printf("%-20s"+ANSI_GREEN+"%s%n"+ANSI_RESET,"string", "PASSED");
+  } else {
+    System.out.printf("%-40s"+ANSI_RED+"%s%n"+ANSI_RESET,"string", "FAILED");
 
+
+}
 
 }
 
