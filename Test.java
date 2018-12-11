@@ -1,24 +1,34 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
-public class test{
+public class Test{
 
-public boolean test = true;
+public static boolean test = true;
 
 public static ArrayList<String> testTicketName =
-       new ArrayList<String>(Arrays.asList(
- “Barn”,“Ung vuxen”,“Vuxen”,“Senior”,“Familj”));
+        new ArrayList<String>(Arrays.asList(
+                "Barn",
+                "Ung vuxen",
+                "Vuxen",
+                "Senior",
+                "Familj"));
 
 
+public static boolean testMetod  (){
+  for(int i=0; i < testTicketName.size(); i++){
+  test = (TestTIS_Tickets.ticketName.get(i) == testTicketName.get(i));
+   if (test == false) {
+     break;
+   }
+  }
+  return test;
 
+}
 
 public static void main(String[] args) {
 
-for(int i=0; i < testTicketName.get(i); i++){
-test = (ticketName.get(i) == testTicketName.get(i));
- if (test == false) {
-   break;
- }
+
+
 }
-return test;
 
 }
