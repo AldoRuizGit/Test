@@ -1,25 +1,18 @@
-public class Test {
-
-private static TestTis_Tickets test = new TestTis_Tickets();
-
-private static boolean ticketName(){
-test.reset();
-return barn== test.ticketName;
-
-
-}
-
-  public static void main(String[] args){
-    if(ticketName()){
-      System.out.printf("Barn", "PASSED");
-    } else {
-      System.out.printf("Barn", "FAILED");
-
-    }
-
-
-
-
+public static ArrayList<String> testTicketName =
+        new ArrayList<String>(Arrays.asList(
+                "Barn",
+                "Ung vuxen",
+                "Vuxen",
+                "Senior",
+                "Familj"));
+  "Barn","Ung vuxen","Vuxen","Senior","Familj"));
+ public static void main(String[] args) {
+ for(int i=0; i < testTicketName(i); i++){
+test = (ticketName.get(i) == testTicketName(i));
+  test = (ticketName.get(i) == testTicketName.get(i));
+  if (test == false) {
+    break;
   }
-
 }
+return((ticketName.get(0) == testTicketName(0)));
+//return test;
