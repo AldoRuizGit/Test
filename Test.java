@@ -27,18 +27,17 @@ public static boolean testMetod  (){
    }
   }
   return test;
-
 }
+
 
 public static void main(String[] args) {
-
   if(test){
-    System.out.printf("%-20s"+ANSI_GREEN+"%s%n"+ANSI_RESET,"string", "PASSED");
+    System.out.printf("%-20s"+ANSI_GREEN+"%s%n"+ANSI_RESET,"ArrayList ticketName", "  PASSED");
   } else {
-    System.out.printf("%-40s"+ANSI_RED+"%s%n"+ANSI_RESET,"string", "FAILED");
-
-
+    System.out.printf("%-40s"+ANSI_RED+"%s%n"+ANSI_RESET,"ArrayList ticketName", "  FAILED");
 }
+
+
 
 }
 
