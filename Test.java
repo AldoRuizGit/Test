@@ -29,6 +29,26 @@ public static boolean testMetod  (){
   return test;
 }
 
+public static ArrayList<String> testTicketDescription =
+        new ArrayList<String>(Arrays.asList(
+                "För personer mellan 1 och 10 år.",
+                "För personer mellan 11 och 17 år.",
+                "För personer mellan 18 och 64 år.",
+                "För personer 64 år eller äldre.",
+                "För en grupp av 1-2 vuxna/seniorer och 1-3 barn."));
+
+
+                public static boolean test2Metod  (){
+                  for(int i=0; i < testTicketDescription.size(); i++){
+                  test = (TestTIS_Tickets.ticketDescription.get(i) == testTicketDescription.get(i));
+                   if (test == false) {
+                     break;
+                   }
+                  }
+                  return test;
+                }
+
+
 
 public static void main(String[] args) {
   if(test){
@@ -36,6 +56,14 @@ public static void main(String[] args) {
   } else {
     System.out.printf("%-40s"+ANSI_RED+"%s%n"+ANSI_RESET,"ArrayList ticketName", "  FAILED");
 }
+
+
+if(test){
+  System.out.printf("%-20s"+ANSI_GREEN+"%s%n"+ANSI_RESET,"ArrayList ticketDescription", "  PASSED");
+} else {
+  System.out.printf("%-40s"+ANSI_RED+"%s%n"+ANSI_RESET,"ArrayList ticketDescription", "  FAILED");
+}
+
 
 
 
