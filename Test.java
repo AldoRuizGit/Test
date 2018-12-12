@@ -48,6 +48,28 @@ public static ArrayList<String> testTicketDescription =
                   return test;
                 }
 
+                public static ArrayList<Double> testTicketPrice =
+                        new ArrayList<Double>(Arrays.asList(
+                                10.00,
+                                15.50,
+                                22.50,
+                                15.00,
+                                40.50));
+
+
+                                public static boolean test3Metod  (){
+                                  for(int i=0; i < testTicketPrice.size(); i++){
+                                  test = (TestTIS_Tickets.ticketPrice.get(i) == testTicketPrice.get(i));
+                                   if (test == false) {
+                                     break;
+                                   }
+                                  }
+                                  return test;
+                                }
+
+
+
+
 
 
 public static void main(String[] args) {
