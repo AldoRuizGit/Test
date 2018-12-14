@@ -86,6 +86,11 @@ if(test){
   System.out.printf("%-40s"+ANSI_RED+"%s%n"+ANSI_RESET,"ArrayList ticketDescription", "  FAILED");
 }
 
+if(test){
+  System.out.printf("%-20s"+ANSI_GREEN+"%s%n"+ANSI_RESET,"ArrayList ticketPrice", "  PASSED");
+} else {
+  System.out.printf("%-40s"+ANSI_RED+"%s%n"+ANSI_RESET,"ArrayList ticketPrice", "  FAILED");
+}
 
 
 
