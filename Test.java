@@ -43,18 +43,18 @@ public static ArrayList<String> testTicketDescription =
                 "För en grupp av 1-2 vuxna/seniorer och 1-3 barn."));
 
 
-                public static boolean test2Metod  (){
-                  for(int i=0; i < testTicketDescription.size(); i++){
-                  test = (TestTIS_Tickets.ticketDescription.get(i) == testTicketDescription.get(i));
-                   if (test == false) {
-                     break;
-                   }
-                  }
-                  return test;
-                }
+public static boolean test2Metod  (){
+  for(int i=0; i < testTicketDescription.size(); i++){
+  test = (TestTIS_Tickets.ticketDescription.get(i) == testTicketDescription.get(i));
+   if (test == false) {
+   break;
+     }
+     }
+   return test;
+     }
 
-                public static ArrayList<Double> testTicketPrice =
-                        new ArrayList<Double>(Arrays.asList(
+public static ArrayList<Double> testTicketPrice =
+  new ArrayList<Double>(Arrays.asList(
                                 10.00,
                                 15.50,
                                 22.50,
@@ -62,26 +62,42 @@ public static ArrayList<String> testTicketDescription =
                                 40.50));
 
 
-                                public static boolean test3Metod  (){
-                                  for(int i=0; i < testTicketPrice.size(); i++){
-                                  test = (TestTIS_Tickets.ticketPrice.get(i) == testTicketPrice.get(i));
-                                   if (test == false) {
-                                     break;
-                                   }
-                                  }
-                                  return test;
-                                }
+public static boolean test3Metod  (){
+ for(int i=0; i < testTicketPrice.size(); i++){
+ test = (TestTIS_Tickets.ticketPrice.get(i) == testTicketPrice.get(i));
+ if (test == false) {
+  break;
+         }
+          }
+          return test;
+          }
 
 
 
 
-                                private static boolean testTransaction(){
-                                String testing = testTrans.getTransaction();
-                                  if ("-1" == testing){
-                                    return true;
-                                  }
-                                  return false;
-                                }
+  private static boolean testTransaction(){
+  String testing = testTrans.getTransaction();
+    if ("-1" == testing){
+        return true;
+                }
+              return false;
+              }
+
+
+
+
+
+
+
+
+private static boolean testCashAmount(){
+double testinng = testTrans.getCashAmount();
+  if (0 == testinng){
+    return true;
+         }
+    return false;
+
+    }
 
 
 
@@ -114,7 +130,14 @@ if(testTransaction()){
 }else{
   System.out.println("testTransaction " + ANSI_RED + "FAILED"+ ANSI_RESET);
 }
+
+
+
+
+if(testCashAmount()){
+  System.out.println("testCashAmount " + ANSI_GREEN + "PASSED"+ ANSI_RESET);
+}else{
+  System.out.println("testCashAmount " + ANSI_RED + "FAILED"+ ANSI_RESET);
 }
-
-
+}
 }
