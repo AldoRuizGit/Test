@@ -9,6 +9,11 @@ public static final String ANSI_RED    = "\u001B[31m";
 public static final String ANSI_GREEN  = "\u001B[32m";
 public static final String ANSI_RESET  = "\u001B[0m";
 public static boolean test = true;
+public static boolean test1 = true;
+
+public static TestTIS_Transaction testTrans = new TestTIS_Transaction();
+
+
 
 public static ArrayList<String> testTicketName =
         new ArrayList<String>(Arrays.asList(
@@ -70,6 +75,17 @@ public static ArrayList<String> testTicketDescription =
 
 
 
+                                private static boolean testTransaction(){
+                                String testing = testTrans.getTransaction();
+                                  if ("-1" == testing){
+                                    return true;
+                                  }
+                                  return false;
+                                }
+
+
+
+
 
 
 public static void main(String[] args) {
@@ -93,7 +109,12 @@ if(test){
 }
 
 
-
+if(testTransaction()){
+  System.out.println("testTransaction " + ANSI_GREEN + "PASSED"+ ANSI_RESET);
+}else{
+  System.out.println("testTransaction " + ANSI_RED + "FAILED"+ ANSI_RESET);
 }
+}
+
 
 }

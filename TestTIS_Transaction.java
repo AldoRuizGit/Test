@@ -3,17 +3,24 @@ import java.util.Scanner;
 public class TestTIS_Transaction{
 
 
-
-    TIS_Main main = new TIS_Main();
-    TIS_Tickets ticket = new TIS_Tickets();
-    static MHS_Main bank = new MHS_Main();
+/**
+    TestTIS_Main main = new TIS_Main();
+    TestTIS_Tickets ticket = new TIS_Tickets();
+    static TestMHS_Main bank = new MHS_Main();
 
     Scanner scan = new Scanner(System.in);
+**/
+    public String transaction = "-1";
+    public double cashAmount = 0;
 
-    String transaction = "-1";
-    double cashAmount = 0;
+public String getTransaction(){
+  return transaction;
+}
+public double getCashAmount(){
+  return cashAmount;
+}
 
-
+/*
 
   public static Payment createPayment(String bankaccount, double cashAmount){
     //System.out.println("Please enter bankaccount number: ");
@@ -27,8 +34,6 @@ public class TestTIS_Transaction{
     // System.out.println(currentPayment.isValid); // gör en retur metod för att kunna få tillbaka om transaktionen gått igenom
     // System.out.println(currentPayment.nameOfBank);
     return currentPayment;
-
-  }
-
+    **/
 
   }
