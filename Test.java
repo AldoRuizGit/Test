@@ -132,7 +132,7 @@ if(testTransaction()){
 }
 
 
-
+//nya tester
 
 if(testCashAmount()){
   System.out.println("testCashAmount " + ANSI_GREEN + "PASSED"+ ANSI_RESET);

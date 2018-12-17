@@ -19,7 +19,7 @@ public String getTransaction(){
 public double getCashAmount(){
   return cashAmount;
 }
-
+//mindre test
 /*
 
   public static Payment createPayment(String bankaccount, double cashAmount){
